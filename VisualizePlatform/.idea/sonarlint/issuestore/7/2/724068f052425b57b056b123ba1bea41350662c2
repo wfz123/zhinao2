@@ -1,0 +1,33 @@
+
+ksquid:UselessImportCheck";Remove this unused import 'com.alibaba.fastjson.JSONArray'.(ÿÀâ³ùÿÿÿÿ8»£÷°ò,
+esquid:S2259S"GA "NullPointerException" could be thrown; "statement" is nullable here.(³úÀ‹8»£÷°ò,
+Zsquid:S2696"6Make the enclosing method "static" or remove this set.(‰İó©şÿÿÿÿ8»£÷°ò,
+Usquid:S2696"6Make the enclosing method "static" or remove this set.(ôÜ¿Ñ8»£÷°ò,
+hsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(«ùŸ68»£÷°ò,
+}squid:S11497"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(‡€õ8»£÷°ò,
+Msquid:S00108U")Either remove or fill this block of code.(¬Àáªøÿÿÿÿ8»£÷°ò,
+}squid:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(§·Âù8»£÷°ò,
+Fsquid:S1148P"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8»£÷°ò,
+wsquid:S3008"TRename this field "DB_DRIVER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ë£ÿÿÿÿÿ8»£÷°ò,
+V
+squid:S106™"9Replace this use of System.out or System.err by a logger.(‡¥…%8»£÷°ò,
+[
+squid:S106O"9Replace this use of System.out or System.err by a logger.(ÒÚ¥øÿÿÿÿ8»£÷°ò,
+tsquid:S3008"QRename this field "DB_PWD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯¯Æ‹şÿÿÿÿ8»£÷°ò,
+vsquid:S3008"SRename this field "DB_UNAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ş–ˆşıÿÿÿÿ8»£÷°ò,
+Usquid:S2696Œ"6Make the enclosing method "static" or remove this set.(ßøšµ8»£÷°ò,
+‚squid:S1149D"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(–¢æÿÿÿÿÿ8»£÷°ò,
+‚squid:S1149r"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(˜İâœÿÿÿÿÿ8»£÷°ò,
+}squid:S11490"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(£…Êœ8®Áù°ò,
+ksquid:S1192!"HDefine a constant instead of duplicating this literal "content" 4 times.(•¹ãşÿÿÿÿ8»£÷°ò,
+Gsquid:S1148‘"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8»£÷°ò,
+`squid:S2259J"BA "NullPointerException" could be thrown; "conn" is nullable here.(£í’á8»£÷°ò,
+tsquid:S3008"QRename this field "DB_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ËƒÔ…ıÿÿÿÿ8»£÷°ò,
+[
+squid:S106I"9Replace this use of System.out or System.err by a logger.(ÿ¸õûüÿÿÿÿ8»£÷°ò,
+[
+squid:S106l"9Replace this use of System.out or System.err by a logger.(Óù£Éøÿÿÿÿ8»£÷°ò,
+‚squid:S1149`"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(˜ŸÛ—şÿÿÿÿ8»£÷°ò,
+‚squid:S1149`"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(˜ŸÛ—şÿÿÿÿ8»£÷°ò,
+Usquid:S2696"6Make the enclosing method "static" or remove this set.(ÍÙİü8»£÷°ò,
+ssquid:S2068"P'PWD' detected in this expression, review this potentially hardcoded credential.(¯¯Æ‹şÿÿÿÿ8»£÷°ò,

@@ -1,0 +1,81 @@
+
+Ysquid:CallToDeprecatedMethodÀ"0Remove this use of "getHours"; it is deprecated.(¶Ëè€
+jsquid:S00117Ñ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ü ¾Ì
+ksquid:S1192#"TDefine a constant instead of duplicating this literal "yyyy-MM-dd HH:mm:ss" 5 times.(ŞÃ¥Œ
+Ysquid:CallToDeprecatedMethod"0Remove this use of "getMonth"; it is deprecated.(¶Í¾Ä
+osquid:S00117‰"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æé …üÿÿÿÿ
+Š squid:ForLoopCounterChangedCheck÷"XRefactor the code in order to not assign to this loop counter from within the loop body.(Öîàşøÿÿÿÿ
+jsquid:S00117Ü"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆáÛ
+U
+squid:S106ä"9Replace this use of System.out or System.err by a logger.(°©†úÿÿÿÿ
+osquid:S00117Æ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«‘•Ëıÿÿÿÿ
+Wsquid:CallToDeprecatedMethod¿".Remove this use of "getDay"; it is deprecated.(±’®
+`squid:CallToDeprecatedMethodÂ"2Remove this use of "getSeconds"; it is deprecated.(àœµöûÿÿÿÿ
+;squid:S1148€"#Use a logger to log this exception.(Ç’Çê
+^squid:S1126Ô"AReplace this if-then-else statement by a single return statement.(ıÀ‚ğúÿÿÿÿ
+`squid:CallToDeprecatedMethodÁ"2Remove this use of "getMinutes"; it is deprecated.(îŒ³øÿÿÿÿ
+:squid:S1148'"#Use a logger to log this exception.(Ç’Çê
+Š squid:ForLoopCounterChangedCheckÿ"XRefactor the code in order to not assign to this loop counter from within the loop body.(§œèšøÿÿÿÿ
+jsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†ß›¸
+nsquid:S00117r"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…èÜ’úÿÿÿÿ
+`squid:CallToDeprecatedMethodÂ"2Remove this use of "getSeconds"; it is deprecated.(àœµöûÿÿÿÿ
+]squid:CallToDeprecatedMethod½"/Remove this use of "getYear"; it is deprecated.(ŸÚ½ƒÿÿÿÿÿ
+Gsquid:S1066ş"/Merge this if statement with the enclosing one.(ú·ÊÊ
+@squid:S1148´"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+hsquid:CommentedOutCodeLineò"<This block of commented-out lines of code should be removed.(ÑİïÂûÿÿÿÿ
+@squid:S1148¥"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+osquid:S00117ì"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›¤İŞıÿÿÿÿ
+@squid:S1148“"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+nsquid:S00117z"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éÁØ¬øÿÿÿÿ
+@squid:S1148Æ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Psquid:S2130´"9Use "Integer.parseInt" for this string-to-int conversion.(®Ë‰C
+Msquid:S2209Ğ"5Change this instance-reference to a static reference.(¡Ç¯ø
+jsquid:S00117Ñ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ü ¾Ì
+:squid:S1148d"#Use a logger to log this exception.(Ç’Çê
+`squid:S2184©"CCast one of the operands of this subtraction operation to a "long".(†¥Ã´ùÿÿÿÿ
+^squid:CallToDeprecatedMethod¾"0Remove this use of "getMonth"; it is deprecated.(ØÄñşÿÿÿÿ
+Ysquid:CallToDeprecatedMethodÀ"0Remove this use of "getHours"; it is deprecated.(¶Ëè€
+osquid:S00117ô"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßíÇ‡ıÿÿÿÿ
+^squid:S2184³"FCast one of the operands of this multiplication operation to a "long".(šÓæ´
+Xsquid:S2184ş"@Cast one of the operands of this addition operation to a "long".(¢ ¨ã
+^squid:S3027Â"FPut single-quotes around '-' to use the faster "indexOf(char)" method.(ã¶Œ²
+osquid:S00117‚"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼ÌôÄÿÿÿÿÿ
+:squid:S1148I"#Use a logger to log this exception.(Ç’Çê
+Xsquid:CallToDeprecatedMethod"/Remove this use of "getDate"; it is deprecated.(¶Í¾Ä
+jsquid:S00117’"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ô´™â
+nsquid:S00117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éÁØ¬øÿÿÿÿ
+jsquid:S00117¶"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( òçŒ
+Lsquid:S1066ò"/Merge this if statement with the enclosing one.(Â½ˆ×ùÿÿÿÿ
+@squid:S1148é"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+osquid:S00117Â"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñô³ ûÿÿÿÿ
+Lsquid:S2209”"5Change this instance-reference to a static reference.(¼Ğ¬
+Qsquid:S2130³"9Use "Integer.parseInt" for this string-to-int conversion.(šÓæ´
+`squid:CallToDeprecatedMethodÁ"2Remove this use of "getMinutes"; it is deprecated.(îŒ³øÿÿÿÿ
+\squid:S2259"DA "NullPointerException" could be thrown; "todate" is nullable here.(¶Í¾Ä
+jsquid:S00117Ñ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ü ¾Ì
+@squid:S1148ó"#Use a logger to log this exception.(¡ªÃ—ÿÿÿÿÿ
+Vsquid:S2130µ"9Use "Integer.parseInt" for this string-to-int conversion.(©Ã”Õÿÿÿÿÿ
+osquid:S00117·"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æé …üÿÿÿÿ
+Usquid:CallToDeprecatedMethod",Remove this use of "Date"; it is deprecated.(¶Í¾Ä
+@squid:S1148„"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+^squid:CallToDeprecatedMethod¾"0Remove this use of "getMonth"; it is deprecated.(ØÄñşÿÿÿÿ
+nsquid:S00117]"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éÁØ¬øÿÿÿÿ
+nsquid:S00117;"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éÁØ¬øÿÿÿÿ
+|squid:S1488Ã"_Immediately return this expression instead of assigning it to the temporary variable "maxDate".(œèË¨ÿÿÿÿÿ
+jsquid:S00117Ñ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áìï¿
+hsquid:S1192`"LDefine a constant instead of duplicating this literal "yyyy-MM-dd" 11 times.(Ñ‚Îœüÿÿÿÿ
+jsquid:S00117½"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ°äß
+]squid:S2184´"FCast one of the operands of this multiplication operation to a "long".(®Ë‰C
+@squid:S1148Û"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Rsquid:S2209Ñ"5Change this instance-reference to a static reference.(ÑŒÂšıÿÿÿÿ
+]squid:CallToDeprecatedMethod½"/Remove this use of "getYear"; it is deprecated.(ŸÚ½ƒÿÿÿÿÿ
+Xsquid:CallToDeprecatedMethod"/Remove this use of "getYear"; it is deprecated.(¶Í¾Ä
+Wsquid:CallToDeprecatedMethod"/Remove this use of "getDate"; it is deprecated.(â—^
+@squid:S1148«"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Wsquid:CallToDeprecatedMethod¿".Remove this use of "getDay"; it is deprecated.(±’®
+Psquid:S1197Ñ"8Move the array designator from the variable to the type.(ÃÎó
+Rsquid:S2209Ï"5Change this instance-reference to a static reference.(àÔ½„üÿÿÿÿ
+?squid:S1125"(Remove the literal "true" boolean value.(â—^
+U
+squid:S106"9Replace this use of System.out or System.err by a logger.(´‹¹öşÿÿÿÿ
+|squid:S1488Ñ"_Immediately return this expression instead of assigning it to the temporary variable "lastday".(ÑŒÂšıÿÿÿÿ

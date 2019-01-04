@@ -1,0 +1,19 @@
+
+V
+squid:S106%"9Replace this use of System.out or System.err by a logger.(Èß‰8Ëè†Ö,
+V
+squid:S106;"9Replace this use of System.out or System.err by a logger.(Èß‰8È¼µƒÖ,
+V
+squid:S106B"9Replace this use of System.out or System.err by a logger.(î‡‚®8äö¤‚Ö,
+bsquid:UselessImportCheck"8Remove this unused import 'org.apache.http.HttpRequest'.(Ÿÿ“8ïø«‡Ö,
+nsquid:CommentedOutCodeLine#"<This block of commented-out lines of code should be removed.(‡ÒÏŠşÿÿÿÿ8Ëè†Ö,
+ksquid:S44886"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(Ë³øÿÿÿÿÿ8Ëè†Ö,
+V
+squid:S106,"9Replace this use of System.out or System.err by a logger.(î‡‚®8Ëè†Ö,
+[
+squid:S106("9Replace this use of System.out or System.err by a logger.(ıáÖåùÿÿÿÿ8˜íß‡Ö,
+hsquid:S4488 "JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(æ‡¨è8äö¤‚Ö,
+[
+squid:S106>"9Replace this use of System.out or System.err by a logger.(ıáÖåùÿÿÿÿ8¶§à‡Ö,
+nsquid:CommentedOutCodeLine9"<This block of commented-out lines of code should be removed.(‡ÒÏŠşÿÿÿÿ8Î¹¦ƒÖ,
+asquid:UselessImportCheck"6Remove this unused import 'javax.servlet.http.Cookie'.(«Şªü8ú•é‡Ö,

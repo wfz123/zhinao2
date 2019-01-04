@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+<link href="../view/css/vpPageView.css" rel="stylesheet" type="text/css"><script type="text/javascript" src="../view/js/viewComFunc.js"></script><script type="text/javascript" src="../view/js/jquery-1.11.1.js"></script></head>
+<body><div class="vp-container">
+<input id="1b448caf-dac2-428c-a7e7-8e0c116eefeb" class="vp-componnent" style="z-index: 10; top: 66px; left: 67px;display: none" type="text"></input>
+<button id="5bb1d994-e990-4578-8a1c-da507e7c0a10" class="vp-componnent" style="z-index: 11; top: 67px; left: 233px;">按 钮</button>
+<table id="b866d0df-d0b2-4328-8e49-bd385c7601c2" class="vp-componnent" style="z-index: 12; top: 106px; left: 65px;"></table>
+<script type="text/javascript">$("#5bb1d994-e990-4578-8a1c-da507e7c0a10").bind("click",function(e){pvHttpPost("http://10.10.24.110:8080/VisualizePlatform/database/queryInfo",{queryStr:JSON.stringify({page:"1",pagesize:"5",name:$("#1b448caf-dac2-428c-a7e7-8e0c116eefeb").val(),tableName:"test"})},function(data){pvCreatTable("b866d0df-d0b2-4328-8e49-bd385c7601c2",{th:["主键id","姓名","性别"],param:["pid","name","sex"],td:data.RESULT.list},"")})})</script></div></body>
+</html>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.com.ultrapower.components.mapper.PiecemealMapper">
+    <!--添加组件-->
+    <insert id="savePiecemeal" parameterType="java.util.Map">
+        insert into bs_business_component
+        (pid,label,component,createtime)
+        values
+        (#{pid},#{label},#{component},#{createTime})
+    </insert>
+    <!--查询组件-->
+    <select id="selectPiecemeal" resultType="java.util.Map" parameterType="java.util.Map">
+         select pid,label,component,FROM_UNIXTIME(createtime ,'%Y-%m-%d %H:%i:%s') createTime
+        from bs_business_component where 1=1
+        <if test="label!=null and label!=''">
+            AND label LIKE CONCAT('%',#{label},'%')
+        </if>
+        order by createtime asc
+    </select>
+    <!--删除组件-->
+    <delete id="delPiecemealById" parameterType="java.util.Map">
+        <if test="pid!=null and pid !=''">
+            DELETE FROM bs_business_component
+            WHERE pid=#{pid}
+        </if>
+    </delete>
+</mapper>
+

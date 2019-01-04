@@ -1,0 +1,22 @@
+
+Zsquid:UselessImportCheck"*Remove this unused import 'java.util.Set'.(ö²„¤şÿÿÿÿ8¥°™ÔÖ,
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(­Ùÿæ8äœÖ¶×,
+dsquid:S1192X"FDefine a constant instead of duplicating this literal ".html" 4 times.(†òÕú8äœÖ¶×,
+psquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Ö±ñÊ8¥°™ÔÖ,
+Msquid:S2093Z"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8äœÖ¶×,
+Asquid:S1148N"#Use a logger to log this exception.(Ç’Çê8¥°™ÔÖ,
+isquid:CommentedOutCodeLinex"<This block of commented-out lines of code should be removed.(€Œå8äœÖ¶×,
+msquid:UselessImportCheck"BRemove this unused import 'cn.com.ultrapower.utils.UUIDGenerator'.(¸šàË8‚‡×Ö,
+Gsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8äœÖ¶×,
+Gsquid:S1148‡"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8äœÖ¶×,
+V
+squid:S106}"9Replace this use of System.out or System.err by a logger.(û‚ş…8äœÖ¶×,
+‚squid:S1149""_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ï˜å¾øÿÿÿÿ8¥°™ÔÖ,
+\squid:S1155">Use isEmpty() to check whether the collection is empty or not.(ô‹ë8¥°™ÔÖ,
+Fsquid:S1148^"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8äœÖ¶×,
+[
+squid:S106w"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8äœÖ¶×,
+Msquid:S2093z"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8äœÖ¶×,
+Fsquid:S1148d"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8äœÖ¶×,
+[
+squid:S106K"9Replace this use of System.out or System.err by a logger.(×”îØùÿÿÿÿ8åâ‘ØÖ,

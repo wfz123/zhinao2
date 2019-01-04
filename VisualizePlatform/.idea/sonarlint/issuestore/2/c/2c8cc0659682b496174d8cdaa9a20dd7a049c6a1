@@ -1,0 +1,10 @@
+
+gsquid:S1226"DIntroduce a new variable instead of reusing the parameter "HtmlEle".(Â§‚Ëşÿÿÿÿ8£Åâ×Ö,
+[
+squid:S106 "9Replace this use of System.out or System.err by a logger.(¬¡ôƒüÿÿÿÿ8¬Ï¸ÕÖ,
+zsquid:S1488#"\Immediately return this expression instead of assigning it to the temporary variable "json".(óÇâÍ8¬Ï¸ÕÖ,
+bsquid:UselessImportCheck"2Remove this unused import 'net.sf.json.JSONArray'.(å¶ÿÿÿÿÿ8¤ÿÖÖ,
+Zsquid:UselessImportCheck"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8¬Ï¸ÕÖ,
+hsquid:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(±âì‘8¬Ï¸ÕÖ,
+osquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸÚìn8ÉÉ÷ÖÖ,
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(• ¶ò8£Åâ×Ö,

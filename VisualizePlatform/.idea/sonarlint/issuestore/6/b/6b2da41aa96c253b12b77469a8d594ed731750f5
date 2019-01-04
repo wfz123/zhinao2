@@ -1,0 +1,20 @@
+
+qsquid:UselessImportCheck"CRemove this unused import 'cn.com.ultrapower.utils.PropertiesUtil'.(«…Øøÿÿÿÿ8™âîğı,
+ksquid:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(½ö…‘şÿÿÿÿ8Ïúµğı,
+esquid:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(µ´÷T8ÄÚŒ±ò,
+fsquid:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(­Äı¸8ÄÚŒ±ò,
+fsquid:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(˜ƒ‰€8ÄÚŒ±ò,
+isquid:S1192"HDefine a constant instead of duplicating this literal "success" 7 times.(İèøëüÿÿÿÿ8ÄÚŒ±ò,
+Zsquid:UselessImportCheck"1Remove this unused import 'com.google.gson.Gson'.(–§8ÄÚŒ±ò,
+qsquid:UselessImportCheck"CRemove this unused import 'cn.com.ultrapower.utils.HttpClientUtil'.(ÑÛ¯™ûÿÿÿÿ8™âîğı,
+Zsquid:UselessImportCheck"1Remove this unused import 'java.text.DateFormat'.(÷Œá¼8¡ô»ö,
+fsquid:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(¦Ééç8ÄÚŒ±ò,
+ksquid:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(†ñ‘Õıÿÿÿÿ8ÄÚŒ±ò,
+ksquid:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(µÑ–áşÿÿÿÿ8ÄÚŒ±ò,
+ksquid:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(Ÿ«æ‰ûÿÿÿÿ8ÄÚŒ±ò,
+ksquid:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(‚Å«¹şÿÿÿÿ8ÄÚŒ±ò,
+Zsquid:UselessImportCheck"1Remove this unused import 'java.util.Properties'.(¬µ²8™âîğı,
+esquid:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ğÒª38ÄÚŒ±ò,
+esquid:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(·‰æ 8ÄÚŒ±ò,
+\squid:UselessImportCheck".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8Ãÿˆøı,
+`squid:UselessImportCheck"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛ8‚ä¼ö,

@@ -1,0 +1,26 @@
+
+`squid:S2259."BA "NullPointerException" could be thrown; "conn" is nullable here.(£í’á8¢²ß»æ,
+tsquid:S3008"QRename this field "DB_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ËƒÔ…ıÿÿÿÿ8¢²ß»æ,
+Fsquid:S11487"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¢²ß»æ,
+vsquid:S3008"SRename this field "DB_UNAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ş–ˆşıÿÿÿÿ8¢²ß»æ,
+Fsquid:S1148h"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¢²ß»æ,
+Tsquid:S2696c"6Make the enclosing method "static" or remove this set.(ßøšµ8¢²ß»æ,
+dsquid:S1858/"F"sql" is already a string, there's no need to call "toString()" on it.(¡¬‹¨8¢²ß»æ,
+esquid:S1192"HDefine a constant instead of duplicating this literal "content" 3 times.(¹˜8¢²ß»æ,
+U
+squid:S106q"9Replace this use of System.out or System.err by a logger.(‹ùøY8¢²ß»æ,
+Tsquid:S2696f"6Make the enclosing method "static" or remove this set.(ôÜ¿Ñ8¢²ß»æ,
+U
+squid:S1066"9Replace this use of System.out or System.err by a logger.(á8¢²ß»æ,
+Ysquid:S2696d"6Make the enclosing method "static" or remove this set.(‰İó©şÿÿÿÿ8¢²ß»æ,
+[
+squid:S106-"9Replace this use of System.out or System.err by a logger.(ÿ¸õûüÿÿÿÿ8¢²ß»æ,
+Tsquid:S2696e"6Make the enclosing method "static" or remove this set.(ÍÙİü8¢²ß»æ,
+wsquid:S3008"TRename this field "DB_DRIVER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ë£ÿÿÿÿÿ8¢²ß»æ,
+tsquid:S3008"QRename this field "DB_PWD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯¯Æ‹şÿÿÿÿ8¢²ß»æ,
+ssquid:S2068"P'PWD' detected in this expression, review this potentially hardcoded credential.(¯¯Æ‹şÿÿÿÿ8¢²ß»æ,
+msquid:S1192"JDefine a constant instead of duplicating this literal "tableName" 3 times.(û¥¬şÿÿÿÿ8¢²ß»æ,
+[
+squid:S106X"9Replace this use of System.out or System.err by a logger.(Óù£Éøÿÿÿÿ8¢²ß»æ,
+esquid:S2259:"GA "NullPointerException" could be thrown; "statement" is nullable here.(³úÀ‹8¢²ß»æ,
+Msquid:S00108<")Either remove or fill this block of code.(¬Àáªøÿÿÿÿ8¢²ß»æ,

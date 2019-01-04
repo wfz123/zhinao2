@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.com.ultrapower.html.mapper.HtmlMapper">
+    <!-- 查询页面列表-->
+    <select id="queryHtmlList" parameterType="java.util.Map"
+            resultType="java.util.Map">
+        SELECT
+        pid,business_no,business_name,business_promulgator,business_release_status,FROM_UNIXTIME(business_createtime,'%Y-%c-%d %H:%i:%s') business_createtime,business_request_url,business_resolution
+        FROM
+        bs_business_businessmodel
+        WHERE 1=1
+        <if test="businessName!=null and businessName!=''">
+            AND business_name LIKE CONCAT('%',#{businessName},'%') OR business_release_status LIKE CONCAT('%',#{releaseStatus},'%')
+        </if>
+        <if test="promulgator!=null and promulgator!=''">
+            AND business_promulgator =#{promulgator}
+        </if>
+        ORDER BY business_createtime DESC
+        <if test="pagesize!=null and pagesize!=0">
+            LIMIT #{page},#{pagesize}
+        </if>
+    </select>
+
+    <!--查询页面列表数量-->
+    <select id="queryHtmlCount" parameterType="java.util.Map" resultType="int">
+        SELECT COUNT(pid) num FROM bs_business_businessmodel
+        WHERE 1=1
+        <if test="businessName!=null and businessName!=''">
+            AND business_name LIKE CONCAT('%',#{businessName},'%') OR business_release_status LIKE CONCAT('%',#{releaseStatus},'%')
+        </if>
+        <if test="promulgator!=null and promulgator!=''">
+            AND business_promulgator =#{promulgator}
+        </if>
+    </select>
+
+    <!-- 保存html文件内容-->
+    <insert id="saveHtmlContent" parameterType="java.util.Map">
+        INSERT INTO bs_business_businessmodel
+        (pid,business_no,business_name,business_promulgator,business_release_status,business_createtime,
+        business_request_url,business_store_url,business_genfilename,business_components,business_htmlid,business_resolution)
+        VALUES
+        (#{pid},#{htmlContent},#{title},#{publisher},#{action},#{createTime},#{requestUrl},#{storeUrl},#{id},#{businessComponents},#{id},#{resolution})
+    </insert>
+
+    <!-- 根据id查询html文件内容-->
+    <select id="queryHtmlById" parameterType="java.util.Map" resultType="java.util.HashMap">
+        <if test="id!=null and id !=''">
+            SELECT
+            a.pid,a.business_no businessNo,a.business_name businessName,a.business_promulgator promulgator,a.business_release_status releaseStatus,FROM_UNIXTIME(a.business_createtime,'%Y-%c-%d %H:%i:%s') createtime,a.business_request_url requestUrl,a.business_store_url storeUrl,a.business_genfilename genfilename,a.business_components components,a.business_htmlid htmlid,a.business_icon icon,a.business_resolution,c.pid groupId,c.groupName groupName
+            FROM
+            bs_business_businessmodel a
+            LEFT JOIN bs_business_grouprelationhtml b on a.pid=b.htmlId
+            LEFT JOIN bs_business_groupmanage c on c.pid=b.groupId
+            WHERE a.pid = #{id}
+        </if>
+    </select>
+
+    <!-- 根据页面的id进行删除-->
+    <delete id="deleteHtmlById" parameterType="java.util.Map">
+        <if test="pid!=null and pid !=''">
+            DELETE FROM
+            bs_business_businessmodel
+            WHERE pid = #{pid}
+        </if>
+    </delete>
+</mapper>
+
+

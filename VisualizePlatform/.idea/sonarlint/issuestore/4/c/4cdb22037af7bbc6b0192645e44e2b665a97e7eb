@@ -1,0 +1,10 @@
+
+isquid:S1192"ODefine a constant instead of duplicating this literal "param is null." 5 times.(àŞËúÿÿÿÿ
+]squid:S1192"HDefine a constant instead of duplicating this literal "success" 8 times.(ú ğî
+_squid:S3981"JThe size of "users" is always ">=0", so update this test to use isEmpty().(´Ì˜
+Xsquid:S2259"CA "NullPointerException" could be thrown; "users" is nullable here.(´Ì˜
+asquid:S1192"GDefine a constant instead of duplicating this literal "failed" 9 times.(àŞËúÿÿÿÿ
+csquid:S1192"NDefine a constant instead of duplicating this literal "Request Error" 8 times.(õÈÓœ
+\squid:S1192"GDefine a constant instead of duplicating this literal "error" 11 times.(õÈÓœ
+^squid:S1192"IDefine a constant instead of duplicating this literal "pagesize" 3 times.(Û‡Ôê
+hsquid:S1192"NDefine a constant instead of duplicating this literal "param is null" 3 times.(«‚Â™ùÿÿÿÿ

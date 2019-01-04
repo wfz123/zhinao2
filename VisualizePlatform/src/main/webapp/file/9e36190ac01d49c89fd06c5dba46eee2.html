@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新建页面</title>
+    <link href="../view/css/vpPageView.css" rel="stylesheet" type="text/css">
+    <link href="http://at.alicdn.com/t/font_822251_brz05ubrazb.css" rel="stylesheet" type="text/css">
+    <link href="http://at.alicdn.com/t/font_631457_b2jv049wnjk.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript"
+            src="http://api.map.baidu.com/api?v=3.0&ak=ICy36B65ubGVH61IIwmQp7eIxmqGAtxx"></script>
+    <script type="text/javascript" src="../view/js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="../view/js/vpTree.js"></script>
+    <script type="text/javascript" src="../view/js/Ischart.js"></script>
+    <script type="text/javascript" src="../view/js/vpDatePicker.js"></script>
+    <script type="text/javascript" src="../view/js/vpJsMap.js"></script>
+    <script type="text/javascript" src="../view/js/viewComFunc.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.1.0.rc2/echarts.min.js"></script>
+</head>
+<style>
+</style>
+<body>
+<div class="vp-container" style="height: 800px;width:1280px">
+    <div id="vpa87ad5bf-643b-4d25-9b7e-074c9ecd1924" class="vp-componnent vp-map"
+         style="z-index: 12; top: 0px; left: 0px;"></div>
+    <div id="vpf8bcab02-8362-492a-997b-ef0359334b54" class="vp-componnent vp-table"
+         style="z-index: 13; top: 10px; left: 930px;"></div>
+    <div id="vp0383809e-cf1f-4565-a1b1-34c3b303fdea" class="vp-componnent vp-pagination"
+         style="z-index: 14; top: 320px; left: 1060px;"></div>
+    <div id="vp04f52522-3a84-478d-9271-952c2a70d680" class="vp-componnent vp-form"
+         style="z-index: 15; top: 410px; left: 570px; width: 400px; height: 300px; background-color: rgba(0, 0, 0, 0); color: rgb(51, 51, 51); border-color: rgb(128, 134, 149); font-size: 12px; border-width: 1px; border-radius: 0px; font-weight: 400; font-style: normal; text-decoration: none solid rgb(51, 51, 51);"></div>
+    <input id="vp93718b61-2031-4adf-8c46-0de9f34b8ff6" class="vp-componnent vp-inputtext"
+           style="z-index: 16; top: 430px; left: 640px;" type="text"></input>
+    <input id="vpade6eeab-b547-472f-99c6-0360f5fbad8b" class="vp-componnent vp-inputtext"
+           style="z-index: 17; top: 490px; left: 640px;" type="text"></input>
+    <div id="vp3baecf7b-924b-49da-85e7-237af95ef47e" class="vp-componnent vp-radio"
+         style="z-index: 18; top: 560px; left: 640px;"></div>
+    <input id="vpac936263-7425-4b4e-8836-05a904194a30" class="vp-componnent vp-inputtext"
+           style="z-index: 19; top: 630px; left: 640px;" type="text"></input>
+    <script>vpMapInitFunc('vpa87ad5bf-643b-4d25-9b7e-074c9ecd1924', {
+        "navigationControl": {"show": true},
+        "icToolBar": {"show": true},
+        "mapStyle": "",
+        "area": "北京",
+        "center": ["116.406587", "39.914336"]
+    });
+    vpCreateRadio('vp3baecf7b-924b-49da-85e7-237af95ef47e', [{
+        "label": "男",
+        "value": "0",
+        "selected": false
+    }, {"label": "女", "value": "1", "selected": false}]); </script>
+    <script type="text/javascript">$(function () {
+        var vpQueryStr = "name like '%%'";
+        pvHttpPost("http://192.168.0.122:8080/VisualizePlatform/common/queryMethod", {
+            queryStr: JSON.stringify({
+                limit: JSON.stringify({
+                    "page": 1,
+                    "pagesize": "6"
+                }),
+                orderBy: "",
+                mapType: "",
+                resultType: "table",
+                whereType: "0",
+                where: encodeURI(vpQueryStr),
+                tableName: "test",
+                columnName: "test.pid,test.name,test.sex,test.createtime"
+            })
+        }, function (data) {
+            pvCreatTable("vpf8bcab02-8362-492a-997b-ef0359334b54", {
+                th: ["姓名", "性别", "日期"],
+                param: ["name", "sex", "createtime"],
+                td: data.RESULT.list
+            }, null, null, true);
+        });
+    });
+    $(function () {
+        var vpQueryStr = "name like '%%'";
+        pvHttpPost("http://192.168.0.122:8080/VisualizePlatform/common/queryMethod", {
+            queryStr: JSON.stringify({
+                limit: JSON.stringify({
+                    "page": 1,
+                    "pagesize": "6"
+                }),
+                orderBy: "",
+                mapType: "",
+                resultType: "pagination",
+                whereType: "0",
+                where: encodeURI(vpQueryStr),
+                tableName: "test",
+                columnName: "test.pid,test.name,test.sex,test.createtime"
+            })
+        }, function (data) {
+            vpPagination1515.reset(data.RESULT.list);
+        });
+    });
+    var vpPagination1515 = new vpPaginationClick("vp0383809e-cf1f-4565-a1b1-34c3b303fdea", 1, 6, function (page) {
+        var paginationPageParam = {page: page, pagesize: 6};
+        var vpQueryStr = "name like '%%'";
+        pvHttpPost("http://192.168.0.122:8080/VisualizePlatform/common/queryMethod", {
+            queryStr: JSON.stringify({
+                limit: JSON.stringify(paginationPageParam),
+                orderBy: "",
+                mapType: "",
+                resultType: "table",
+                whereType: "0",
+                where: encodeURI(vpQueryStr),
+                tableName: "test",
+                columnName: "test.pid,test.sex,test.name,test.createtime"
+            })
+        }, function (data) {
+            pvCreatTable("vpf8bcab02-8362-492a-997b-ef0359334b54", {
+                th: ["性别", "姓名", "日期"],
+                param: ["sex", "name", "createtime"],
+                td: data.RESULT.list
+            }, null, null, true);
+        })
+    });
+    $(function () {
+        var pid1683 = vpGetQueryString("pid");
+        var vpQueryStr = "pid='" + pid1683 + "'";
+        pvHttpPost("http://192.168.0.122:8080/VisualizePlatform/common/queryMethod", {
+            queryStr: JSON.stringify({
+                orderBy: "",
+                mapType: "",
+                resultType: "form",
+                whereType: "0",
+                where: encodeURI(vpQueryStr),
+                tableName: "test",
+                columnName: "test.pid,test.name,test.sex,test.createtime"
+            })
+        }, function (data) {
+            vpCreateForm(["vp93718b61-2031-4adf-8c46-0de9f34b8ff6", "vpade6eeab-b547-472f-99c6-0360f5fbad8b", "vp3baecf7b-924b-49da-85e7-237af95ef47e", "vpac936263-7425-4b4e-8836-05a904194a30"], ["inputtext", "inputtext", "radio", "inputtext"], ["pid", "name", "sex", "createtime"], data.RESULT.list);
+        });
+    });</script>
+</div>
+</body>
+</html>

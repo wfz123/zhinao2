@@ -1,0 +1,8 @@
+
+Fsquid:S1148A"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8…šúëÙ,
+nsquid:CommentedOutCodeLine$"<This block of commented-out lines of code should be removed.(ÑéŠ×şÿÿÿÿ8¤àĞñÙ,
+[
+squid:S106j"9Replace this use of System.out or System.err by a logger.(ÚÊó¨üÿÿÿÿ8…šúëÙ,
+nsquid:CommentedOutCodeLine7"<This block of commented-out lines of code should be removed.(˜Åõøÿÿÿÿ8É’ÑñÙ,
+Fsquid:S1148]"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8…šúëÙ,
+isquid:CommentedOutCodeLineX"<This block of commented-out lines of code should be removed.(À‘¿û8…šúëÙ,

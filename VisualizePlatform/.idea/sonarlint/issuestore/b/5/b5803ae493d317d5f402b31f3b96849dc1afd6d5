@@ -1,0 +1,13 @@
+
+psquid:S001173"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒíÑæ8ä”ÊÖß,
+gsquid:S4488>"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ìäÙ)8ä”ÊÖß,
+lsquid:UselessImportCheck"ARemove this unused import 'java.io.UnsupportedEncodingException'.(Ãµ…“8º„£İè,
+ysquid:S1488'"\Immediately return this expression instead of assigning it to the temporary variable "json".(Ã•å]8ä”ÊÖß,
+}squid:S1488O"ZImmediately return this expression instead of assigning it to the temporary variable "js".(ü˜—˜ÿÿÿÿÿ8ä”ÊÖß,
+[squid:UselessImportCheck"0Remove this unused import 'java.net.URLDecoder'.(œ®ô„8º„£İè,
+hsquid:S44881"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(±âì‘8ä”ÊÖß,
+msquid:S4488W"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(Ñô§şÿÿÿÿ8ä”ÊÖß,
+squid:S14885"\Immediately return this expression instead of assigning it to the temporary variable "json".(Û¼«âûÿÿÿÿ8ä”ÊÖß,
+hsquid:S4488J"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(Ÿ’‰²8ä”ÊÖß,
+[squid:UselessImportCheck"0Remove this unused import 'java.net.URLEncoder'.(ê¢ºÆ8’İè,
+hsquid:S4488!"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(×ãÃõ8ä”ÊÖß,

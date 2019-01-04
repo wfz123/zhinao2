@@ -1,0 +1,8 @@
+
+:squid:S1148P"#Use a logger to log this exception.(Ç’Çê
+bsquid:S1192%"FDefine a constant instead of duplicating this literal "error" 3 times.(éšæÿÿÿÿÿ
+^squid:S1192'"HDefine a constant instead of duplicating this literal "success" 3 times.(óâ™v
+csquid:S1192"GDefine a constant instead of duplicating this literal "failed" 3 times.(ïÈ®øýÿÿÿÿ
+:squid:S1148$"#Use a logger to log this exception.(Ç’Çê
+Usquid:S11558">Use isEmpty() to check whether the collection is empty or not.(•ñ¥À
+:squid:S1148<"#Use a logger to log this exception.(Ç’Çê

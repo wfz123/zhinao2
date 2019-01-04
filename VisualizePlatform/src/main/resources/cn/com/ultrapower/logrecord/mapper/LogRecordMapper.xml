@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.com.ultrapower.logrecord.mapper.LogRecordMapper">
+
+    <!--添加组件日志记录-->
+    <insert id="saveLogRecord" parameterType="java.util.Map">
+        insert into bs_business_logrecord (
+            pid,
+            business_no,
+            event_name,
+            execute_order,
+            operate_condition,
+            current_component,
+            createtime,
+            other_operate
+        )values (
+            #{pid},
+            #{businessNo},
+            #{eventName},
+            #{executeOrder},
+            #{operateCondition},
+            #{currentComponent},
+            #{createTime},
+            #{otherOperate}
+        )
+    </insert>
+
+    <!--根据id查看组件相关配置记录-->
+    <select id="queryLogRecordById" parameterType="java.util.Map" resultType="java.util.HashMap">
+        <if test="pid!=null and pid !=''">
+            SELECT
+            pid,
+            business_no,
+            event_name,
+            execute_order,
+            operate_condition,
+            current_component,
+            createtime,
+            other_operate
+            from bs_business_logrecord
+            where pid = #{pid}
+        </if>
+    </select>
+
+    <!--根据id修改组件 -->
+    <update id="updateLogRecorById" parameterType="java.util.Map">
+        update bs_business_logrecord
+        <trim prefix="set" suffixOverrides=",">
+            <if test="eventName != null and eventName!=''">
+                event_name = #{eventName},
+            </if>
+            <if test="executeOrder != null and executeOrder!= ''">
+                execute_order = #{executeOrder},
+            </if>
+            <if test="operateCondition != null and operateCondition!= ''">
+                operate_condition = #{operateCondition},
+            </if>
+        </trim>
+        WHERE pid = #{pid}
+    </update>
+
+</mapper>
+
+

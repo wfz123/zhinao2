@@ -1,0 +1,18 @@
+
+Sjavascript:S1854"9Remove this useless assignment to local variable "table1"(¡ù€Ã
+]javascript:S2814"CRename "i" as this name is already used in declaration at line 277.(©æ¸Í
+Xjavascript:S1854"7Remove this useless assignment to local variable "that"(ºú†°8æ£¥Õó,
+ejavascript:UnusedVariable"6Remove the declaration of the unused 'month' variable.(¥´Âäøÿÿÿÿ8æ£¥Õó,
+Xjavascript:S1854"7Remove this useless assignment to local variable "that"(ºú†°8æ£¥Õó,
+]javascript:S2814"CRename "j" as this name is already used in declaration at line 279.(”èÌÃ
+^javascript:S1854"8Remove this useless assignment to local variable "_date"(­´÷ùÿÿÿÿ8æ£¥Õó,
+Xjavascript:S1854"7Remove this useless assignment to local variable "_day"(İ˜°ø8æ£¥Õó,
+Zjavascript:UnusedVariable"7Remove the declaration of the unused 'table1' variable.(¡ù€Ã
+Mjavascript:EmptyBlock")Either remove or fill this block of code.(¾¦óĞøÿÿÿÿ
+^javascript:S1854"8Remove this useless assignment to local variable "_date"(­´÷ùÿÿÿÿ8æ£¥Õó,
+rjavascript:S930"T"showSelectYearTable" declared at line 269 expects 0 arguments, but 2 were provided.(´ßÛÎÿÿÿÿÿ
+^javascript:S1854"8Remove this useless assignment to local variable "month"(¥´Âäøÿÿÿÿ8æ£¥Õó,
+_javascript:UnusedVariable"5Remove the declaration of the unused 'that' variable.(ºú†°8æ£¥Õó,
+_javascript:UnusedVariable"5Remove the declaration of the unused 'that' variable.(ºú†°8æ£¥Õó,
+Djavascript:UnusedVariable"!Remove unused function 'onClose'.(¹»
+Xjavascript:S1854"7Remove this useless assignment to local variable "_day"(İ˜°ø8æ£¥Õó,

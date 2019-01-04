@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.com.ultrapower.groupmanage.mapper.GroupmanageMapper">
+    <!--添加分组-->
+    <insert id="saveGroupmanage" parameterType="java.util.Map">
+        insert into bs_business_groupmanage
+        (pid,groupName,groupDescribe,createtime)
+        values
+        (#{pid},#{groupName},#{groupDescribe},#{createTime})
+    </insert>
+    <!--查询分组名称(根据名称模糊查询)-->
+    <select id="queryGroupmanageName" resultType="java.util.Map" parameterType="java.util.Map">
+        select
+        pid,groupName,groupDescribe,FROM_UNIXTIME(createtime,'%Y-%c-%d %H:%i:%s') createtime
+        from bs_business_groupmanage
+        where 1=1
+        <if test="groupName!=null and groupName!=''">
+            AND groupName LIKE CONCAT('%',#{groupName},'%')
+        </if>
+    </select>
+    <!--根据id查询分组信息-->
+    <select id="queryGroupmanageById" resultType="java.util.Map" parameterType="java.util.Map">
+        <if test="pid != null and pid!=''">
+            select pid,groupName,groupDescribe
+            from bs_business_groupmanage
+            where pid=#{pid}
+        </if>
+    </select>
+    <!--根据id修改分组 -->
+    <update id="updateGroupnamageById" parameterType="java.util.Map">
+
+        <if test="pid != null and pid!=''">
+            update bs_business_groupmanage
+            <trim prefix="set" suffixOverrides=",">
+                <if test="groupName != null and groupName!=''">
+                    groupName = #{groupName},
+                </if>
+                <if test="groupDescribe != null and groupDescribe!=''">
+                    groupDescribe = #{groupDescribe},
+                </if>
+            </trim>
+            WHERE pid = #{pid}
+        </if>
+    </update>
+    <!--添加分组关系-->
+    <insert id="saveGrouprelationhtml" parameterType="java.util.Map">
+        insert into bs_business_grouprelationhtml
+        (pid, htmlId, groupId, createtime)
+        values
+         (#{pid},#{htmlId},#{groupId},#{createTime})
+    </insert>
+    <!--根据htmlId修改分组关系-->
+    <update id="updateByhtmlId" parameterType="java.util.Map">
+        <if test="htmlId != null and htmlId!='' and groupId != null and groupId!=''">
+            UPDATE bs_business_grouprelationhtml SET groupId =#{groupId}
+            WHERE
+            htmlId = #{htmlId}
+        </if>
+    </update>
+    <!--根据htmlId删除分组关系-->
+    <delete id="deleteByhtmlId" parameterType="java.util.Map">
+        <if test="htmlId != null and htmlId!=''">
+            delete from bs_business_grouprelationhtml WHERE htmlId = #{htmlId}
+        </if>
+    </delete>
+    <!--删除分组-->
+    <delete id="dropGroupmanageByGroupId" parameterType="java.util.Map">
+        <if test="groupId != null and groupId !=''">
+            delete from bs_business_groupmanage where pid=#{groupId}
+        </if>
+    </delete>
+    <!--删除分组关系-->
+    <delete id="dropGrouprelationhtmlByGroupId" parameterType="java.util.Map">
+        <if test="groupId != null and groupId !=''">
+            delete from bs_business_grouprelationhtml where groupId=#{groupId}
+        </if>
+    </delete>
+    <!--查询分组名、描述、页面数量、页面最新时间-->
+    <select id="queryGroupConTim"  parameterType="java.util.Map" resultType="java.util.Map">
+            SELECT
+            c.groupName, c.groupDescribe, COUNT(a.pid) num,c.pid groupId,
+            ifnull(
+                FROM_UNIXTIME(
+                    MAX(a.business_createtime),
+                    '%Y-%c-%d %H:%i:%s'
+                ),
+                FROM_UNIXTIME(
+                    c.createtime,
+                    '%Y-%c-%d %H:%i:%s'
+                )
+            ) createtime,a.business_promulgator
+            FROM
+                bs_business_businessmodel a
+            JOIN bs_business_grouprelationhtml b ON a.pid = b.htmlId
+            RIGHT JOIN bs_business_groupmanage c ON b.groupId = c.pid
+            where 1=1
+            <if test="groupName != null and groupName != ''">
+                and c.groupName  LIKE CONCAT('%',#{groupName},'%')
+            </if>
+            GROUP BY
+                c.groupName
+            ORDER BY
+                createtime DESC
+    </select>
+    <!--查询分组页面-->
+    <select id="queryGroupHtmlByGroupId" resultType="java.util.Map" parameterType="java.util.Map">
+        <if test="groupId != null and groupId != ''">
+            SELECT
+              pid,business_no,business_name,business_promulgator,business_release_status,FROM_UNIXTIME(business_createtime,'%Y-%c-%d %H:%i:%s') business_createtime,business_request_url,business_resolution
+            FROM
+              bs_business_businessmodel
+            WHERE
+              pid IN (
+            SELECT
+              htmlId
+            FROM
+              bs_business_grouprelationhtml
+            WHERE groupId = #{groupId}
+            )
+            <if test="htmlName != null and htmlName != ''">
+                and business_name  LIKE CONCAT('%',#{htmlName},'%')
+            </if>
+            ORDER BY business_createtime DESC
+            <if test="pagesize!=null and pagesize!=0">
+                LIMIT #{page},#{pagesize}
+            </if>
+        </if>
+    </select>
+    <!--查询未文组页面数量、页面最新时间-->
+    <select id="queryUnGroupConTim" resultType="java.util.Map">
+        SELECT
+          '未分组页面' groupName,'未对该组内的页面进行分组。如需处理，点击进入列表进行分组管理。' groupDescribe,COUNT(1) num,'' groupId,FROM_UNIXTIME(MAX(business_createtime),'%Y-%c-%d %H:%i:%s')createtime,business_promulgator
+        FROM
+          bs_business_businessmodel
+        WHERE pid not in
+          (SELECT htmlId FROM bs_business_grouprelationhtml)
+    </select>
+    <!--查询未分组页面列表-->
+    <select id="queryUnGroupHtmlList" resultType="java.util.Map" parameterType="java.util.Map">
+        SELECT
+          pid,business_no,business_name,business_promulgator,business_release_status,FROM_UNIXTIME(business_createtime,'%Y-%c-%d %H:%i:%s') business_createtime,business_request_url,business_resolution
+        FROM
+          bs_business_businessmodel
+        WHERE pid not in
+        (SELECT htmlId FROM bs_business_grouprelationhtml)
+        <if test="htmlName != null and htmlName != ''">
+            and business_name  LIKE CONCAT('%',#{htmlName},'%')
+        </if>
+        ORDER BY business_createtime DESC
+        <if test="pagesize!=null and pagesize!=0">
+            LIMIT #{page},#{pagesize}
+        </if>
+    </select>
+    <!-- 根据页面id删除关系数据-->
+    <delete id="delRelationByHtmlId" parameterType="java.util.Map">
+        <if test="htmlId!=null and htmlId!=''">
+            DELETE FROM bs_business_grouprelationhtml WHERE htmlId=#{htmlId}
+        </if>
+    </delete>
+    <!--查询已分组页面数量-->
+    <select id="queryGroupCount" parameterType="java.util.Map" resultType="int">
+        <if test="groupId != null and groupId != ''">
+            SELECT
+            count(1) num
+            FROM
+            bs_business_businessmodel
+            WHERE
+            pid IN (
+            SELECT
+            htmlId
+            FROM
+            bs_business_grouprelationhtml
+            WHERE groupId = #{groupId}
+            )
+            <if test="htmlName != null and htmlName != ''">
+                and business_name  LIKE CONCAT('%',#{htmlName},'%')
+            </if>
+        </if>
+    </select>
+    <!--查询未分组页面数量-->
+    <select id="queryUnGroupCount" resultType="int" parameterType="java.util.Map">
+        SELECT count(1) num FROM bs_business_businessmodel
+        WHERE 1=1
+        <if test="htmlName != null and htmlName != ''">
+        and business_name  LIKE CONCAT('%',#{htmlName},'%')
+        </if>
+        and pid not in(SELECT htmlId FROM bs_business_grouprelationhtml)
+    </select>
+    <!--分组名称重名验证-->
+    <select id="queryGroupName" parameterType="java.util.Map" resultType="String">
+        <if test="groupName !=null and groupName !=''">
+            select  groupName from  bs_business_groupmanage where groupName=#{groupName}
+        </if>
+    </select>
+</mapper>
+

@@ -1,0 +1,11 @@
+
+msquid:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(Ä†Ëûÿÿÿÿ8¤ÿ¾Òá,
+hsquid:S44889"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(‚ó’ë8¤ÿ¾Òá,
+squid:S14880"\Immediately return this expression instead of assigning it to the temporary variable "json".(Ûéš–ıÿÿÿÿ8¤ÿ¾Òá,
+msquid:UselessImportCheck"BRemove this unused import 'javax.servlet.http.HttpServletRequest'.(ø©¹…8¤ÿ¾Òá,
+msquid:S4488m"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(Æ¨¿õûÿÿÿÿ8¤ÿ¾Òá,
+squid:S1488""\Immediately return this expression instead of assigning it to the temporary variable "json".(äŞ¾—üÿÿÿÿ8¤ÿ¾Òá,
+msquid:S4488F"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(òÿ…€ùÿÿÿÿ8¤ÿ¾Òá,
+gsquid:S4488`"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ÎâÌF8¤ÿ¾Òá,
+hsquid:S4488+"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(›×ú8¤ÿ¾Òá,
+hsquid:S4488S"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(û²ˆ8¤ÿ¾Òá,

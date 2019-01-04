@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.com.ultrapower.user.mapper.BaseUserMapper">
+
+    <insert id="saveUserInfo" parameterType="java.util.Map">
+        INSERT INTO bs_t_sm_user
+        <foreach collection="param.keys" item="key" open="(" close=")" separator="," >
+            ${key}
+        </foreach>
+        VALUES
+        <foreach collection="param.keys" item="key" open="(" close=")" separator=",">
+            #{param[${key}]}
+        </foreach>
+    </insert>
+
+    <update id="updateUserInfo" parameterType="java.util.Map">
+        UPDATE bs_t_sm_user
+        <set>
+            <foreach collection="param.keys" item="key" separator=",">
+                <if test="key!='pid'">
+                    ${key} = #{param[${key}]}
+                </if>
+            </foreach>
+        </set>
+        WHERE
+        pid = #{param.pid}
+    </update>
+
+    <select id="queryUserData" parameterType="java.util.Map" resultType="cn.com.ultrapower.user.entity.BaseUserEntity">
+        SELECT pid,loginName,fullName,pwd,mobile,status,depid,depName,roleid,rolename,groupId,groupName,warnsignal,phone
+        FROM bs_t_sm_user WHERE 1=1
+        <if test="pids!=null and pids.size()>0">
+            AND pid IN
+            <foreach collection="pids" item="item" separator="," open="(" close=")" >
+                #{item}
+            </foreach>
+        </if>
+        <if test="pid !=null and pid!=''">
+            AND pid = #{pid}
+        </if>
+        <if test="loginName != null and loginName != '' ">
+            AND loginName = #{loginName}
+        </if>
+        <if test="warnsignal != null and warnsignal != '' ">
+            AND warnsignal = #{warnsignal}
+        </if>
+        <if test="searchVal!=null and searchVal!=''">
+            AND (fullName LIKE  CONCAT('%',#{searchVal},'%') OR loginName LIKE  CONCAT('%',#{searchVal},'%') OR warnsignal LIKE CONCAT('%',#{searchVal},'%'))
+        </if>
+        ORDER BY createtime DESC
+        <if test="pagesize != null and pagesize != 0">
+            limit #{page},#{pagesize}
+        </if>
+    </select>
+
+    <select id="queryUserCount" parameterType="java.util.Map" resultType="int">
+        SELECT COUNT(1) FROM bs_t_sm_user WHERE 1=1
+        <if test="pid!=null and pid!=''">
+            AND pid = #{pid}
+        </if>
+        <if test="searchVal!=null and searchVal!=''">
+            AND (fullName LIKE  CONCAT('%',#{searchVal},'%') OR loginName LIKE  CONCAT('%',#{searchVal},'%'))
+        </if>
+    </select>
+
+    <delete id="deleteUserInfo" parameterType="java.util.Map">
+        DELETE FROM bs_t_sm_user
+        WHERE pid = #{pid}
+    </delete>
+
+    <delete id="batchDeleteUser" parameterType="java.util.List">
+        DELETE FROM bs_t_sm_user WHERE pid in
+        <foreach item="pid" collection="list" open="(" separator="," close=")">
+            #{pid}
+        </foreach>
+    </delete>
+
+    <!-- 批量修改部门id，部门名称 -->
+    <update id="updateDepToUserList" parameterType="java.util.List">
+        <foreach collection="list" item="item" separator=";" >
+            UPDATE bs_t_sm_user SET depid = #{item.depid},depname = #{item.depName} WHERE pid = #{item.pid}
+        </foreach>
+    </update>
+
+
+    <!-- 批量修改角色id，角色名称 -->
+    <update id="updateRoleToUserList" parameterType="java.util.List">
+        <foreach collection="list" item="item" separator=";">
+             UPDATE bs_t_sm_user SET roleid = #{item.roleid},rolename = #{item.roleName}
+             WHERE pid=#{item.pid}
+        </foreach>
+    </update>
+
+
+
+
+</mapper>

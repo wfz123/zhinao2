@@ -1,0 +1,54 @@
+
+Bsquid:S1148 "#Use a logger to log this exception.(Ç’Çê8½ïãÕò,
+Gsquid:S1481ç"(Remove this unused "num" local variable.(Ø‚ºù8½ïãÕò,
+Asquid:S11483"#Use a logger to log this exception.(Ç’Çê8½ïãÕò,
+jsquid:CommentedOutCodeLine…"<This block of commented-out lines of code should be removed.(×Çœğ8½ïãÕò,
+Bsquid:S1148"#Use a logger to log this exception.(Ç’Çê8½ïãÕò,
+osquid:CommentedOutCodeLineê"<This block of commented-out lines of code should be removed.(ã½ìüÿÿÿÿ8½ïãÕò,
+Asquid:S1148Y"#Use a logger to log this exception.(Ç’Çê8½ïãÕò,
+isquid:CommentedOutCodeLine?"<This block of commented-out lines of code should be removed.(ŠŠêâ8½ïãÕò,
+bsquid:S1155²">Use isEmpty() to check whether the collection is empty or not.(ï—È‡ùÿÿÿÿ8½ïãÕò,
+ƒsquid:S1149à"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ì­ŠÜúÿÿÿÿ8½ïãÕò,
+osquid:CommentedOutCodeLineæ"<This block of commented-out lines of code should be removed.(îàÕóüÿÿÿÿ8½ïãÕò,
+fsquid:S11926"IDefine a constant instead of duplicating this literal "success" 10 times.(óâ™v8Ô«í®è,
+bsquid:S1155•">Use isEmpty() to check whether the collection is empty or not.(ï—È‡ùÿÿÿÿ8½ïãÕò,
+isquid:CommentedOutCodeLineó"<This block of commented-out lines of code should be removed.(ëñ³8½ïãÕò,
+}squid:S1149±"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(™Í±8½ïãÕò,
+psquid:S3776±"RRefactor this method to reduce its Cognitive Complexity from 36 to the 15 allowed.(™Í±8½ïãÕò,
+jsquid:CommentedOutCodeLineÈ"<This block of commented-out lines of code should be removed.(ÀĞ¹Î8½ïãÕò,
+isquid:S11924"FDefine a constant instead of duplicating this literal "error" 9 times.(éšæÿÿÿÿÿ8½ïãÕò,
+Bsquid:S1148·"#Use a logger to log this exception.(Ç’Çê8½ïãÕò,
+osquid:CommentedOutCodeLine‡"<This block of commented-out lines of code should be removed.(¯¬˜ãÿÿÿÿÿ8½ïãÕò,
+]squid:S1155É">Use isEmpty() to check whether the collection is empty or not.(•ñ¥À8½ïãÕò,
+msquid:S1192$"ODefine a constant instead of duplicating this literal "house_database" 3 times.(Ç›Ø8ó¸âÔó,
+gsquid:UnusedPrivateMethod±";Remove this unused private "analyzeTableList4Mysql" method.(™Í±8½ïãÕò,
+osquid:CommentedOutCodeLineè"<This block of commented-out lines of code should be removed.(ŒÉóßùÿÿÿÿ8½ïãÕò,
+isquid:S1192S"KDefine a constant instead of duplicating this literal "columnType" 3 times.(› ‹ñ8½ïãÕò,
+jsquid:CommentedOutCodeLine±"<This block of commented-out lines of code should be removed.(Şûö´8½ïãÕò,
+}squid:S1149±"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(™Í±8½ïãÕò,
+]squid:S1155‰">Use isEmpty() to check whether the collection is empty or not.(•ñ¥À8½ïãÕò,
+zsquid:S11924"WDefine a constant instead of duplicating this literal "query happen exception" 9 times.(éšæÿÿÿÿÿ8½ïãÕò,
+\squid:S1155/">Use isEmpty() to check whether the collection is empty or not.(•ñ¥À8½ïãÕò,
+isquid:CommentedOutCodeLinee"<This block of commented-out lines of code should be removed.(ŠŠêâ8½ïãÕò,
+Asquid:S1148s"#Use a logger to log this exception.(Ç’Çê8½ïãÕò,
+isquid:CommentedOutCodeLineK"<This block of commented-out lines of code should be removed.(ŸÉ«»8½ïãÕò,
+psquid:S1192%"MDefine a constant instead of duplicating this literal "databaseName" 4 times.(õöùÛşÿÿÿÿ8¤İãÕò,
+isquid:S1192R"KDefine a constant instead of duplicating this literal "columnName" 3 times.(ÿúú˜8½ïãÕò,
+isquid:CommentedOutCodeLineo"<This block of commented-out lines of code should be removed.(ö’ÀÀ8½ïãÕò,
+jsquid:S1192'"GDefine a constant instead of duplicating this literal "failed" 5 times.(ïÈ®øıÿÿÿÿ8€®äÎá,
+~squid:S1149”"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(¥Á×á8½ïãÕò,
+Bsquid:S1148ö"#Use a logger to log this exception.(Ç’Çê8½ïãÕò,
+Lsquid:S1481k".Remove this unused "conditMap" local variable.(Ò¼´ª8½ïãÕò,
+bsquid:S2583&"DChange this condition so that it does not always evaluate to "false"(¢ˆÜº8¤İãÕò,
+usquid:S1192$"WDefine a constant instead of duplicating this literal "config/jdbc.properties" 3 times.(Ç›Ø8ó¸âÔó,
+jsquid:CommentedOutCodeLineî"<This block of commented-out lines of code should be removed.(Û×÷¸8½ïãÕò,
+Bsquid:S1148Î"#Use a logger to log this exception.(Ç’Çê8½ïãÕò,
+;squid:S1643£"Use a StringBuilder instead.(´€æŠ8½ïãÕò,
+]squid:S1155œ">Use isEmpty() to check whether the collection is empty or not.(•ñ¥À8½ïãÕò,
+osquid:CommentedOutCodeLineò"<This block of commented-out lines of code should be removed.(¶ÓãĞÿÿÿÿÿ8½ïãÕò,
+Bsquid:S1148ü"#Use a logger to log this exception.(Ç’Çê8½ïãÕò,
+qsquid:S1192'"NDefine a constant instead of duplicating this literal "query is null" 5 times.(ïÈ®øıÿÿÿÿ8¤İãÕò,
+isquid:CommentedOutCodeLineš"<This block of commented-out lines of code should be removed.(ëÀÃa8½ïãÕò,
+nsquid:CommentedOutCodeLine-"<This block of commented-out lines of code should be removed.(å¨İ¨ùÿÿÿÿ8Ğªıé,
+~squid:S1149”"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(¥Á×á8½ïãÕò,
+]squid:S1155Š">Use isEmpty() to check whether the collection is empty or not.(•ñ¥À8½ïãÕò,

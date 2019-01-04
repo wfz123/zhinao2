@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="VisualizePlatform:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="VisualizePlatform.war">
+      <element id="artifact" artifact-name="VisualizePlatform:war exploded" />
+    </root>
+  </artifact>
+</component>

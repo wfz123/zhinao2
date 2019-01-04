@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.com.ultrapower.monitor.mapper.MonitorMapper">
+<!-- 添加监控任务-->
+    <insert id="insertMonitor" parameterType="java.util.Map">
+        INSERT INTO bs_business_monitor
+        (pid,task_name,task_sign,monitor_table,monitor_condition,relation_name,relation_calculateSQL,result_store_table,store_columns,createtime)
+        VALUES
+        (#{pid},#{taskName},#{taskSign},#{monitorTable},#{monitorCondition},#{relationName},#{relationCalculateSQL},#{resultStoreTable},#{storeColumns},#{createTime})
+    </insert>
+    <!-- 查询监控任务列表-->
+    <select id="queryMonitorList" parameterType="java.util.Map" resultType="cn.com.ultrapower.monitor.entity.MonitorEntity">
+        SELECT pid,task_name taskName,task_sign taskSign,monitor_table monitorTable,result_store_table resultStoreTable,FROM_UNIXTIME(createtime ,'%Y-%m-%d %H:%i:%s') createTime
+        FROM bs_business_monitor
+        WHERE 1=1
+        <if test="taskName!=null and taskName!=''">
+            AND task_name LIKE CONCAT('%',#{taskName},'%')
+        </if>
+        <if test="taskSign!=null and taskSign!=''">
+            AND task_sign LIKE CONCAT('%',#{taskSign},'%')
+        </if>
+        ORDER BY createtime ${orderBy}
+        <if test="pagesize!=null and pagesize!=0">
+            LIMIT #{page},#{pagesize}
+        </if>
+    </select>
+    <!--查询监控任务数量-->
+    <select id="queryMonitorCount" parameterType="java.util.Map" resultType="int">
+        SELECT count(pid) num
+        FROM bs_business_monitor
+        WHERE 1=1
+        <if test="taskName!=null and taskName!=''">
+            AND task_name LIKE CONCAT('%',#{taskName},'%')
+        </if>
+        <if test="taskSign!=null and taskSign!=''">
+            AND task_sign LIKE CONCAT('%',#{taskSign},'%')
+        </if>
+    </select>
+
+    <!-- 删除监控任务记录-->
+    <delete id="delMonitorById" parameterType="java.util.Map">
+        <if test="pid!=null and pid !=''">
+            DELETE FROM bs_business_monitor
+            WHERE pid=#{pid}
+        </if>
+    </delete>
+    <!-- 编辑回显-->
+    <select id="queryMonitorById" parameterType="java.util.Map" resultType="java.util.Map">
+        SELECT
+        pid,task_name taskName,task_sign taskSign,monitor_table monitorTable,monitor_condition monitorCondition,relation_name relationName,relation_calculateSQL relationCalculateSQL,result_store_table resultStoreTable,store_columns storeColumns,FROM_UNIXTIME(createtime ,'%Y-%m-%d %H:%i:%s') createtime
+        FROM bs_business_monitor
+        WHERE 1=1
+        <if test="pid!=null and pid !=''">
+            AND pid=#{pid}
+        </if>
+        <if test="topic!=null and topic !=''">
+            AND task_sign=#{topic}
+        </if>
+    </select>
+    <!-- 校验任务标识-->
+    <select id="checkTaskSign" parameterType="java.util.Map" resultType="String">
+        <if test="taskSign !=null and taskSign!=''">
+            select task_sign FROM bs_business_monitor
+            WHERE task_sign=#{taskSign}
+        </if>
+    </select>
+    <!-- 接收kafka数据并将数据写入到表中-->
+    <insert id="receiveData" parameterType="java.util.Map">
+      INSERT INTO ${tableName}
+        <foreach collection="keys" item="key" index="index" open="(" separator="," close=")">${key}</foreach>
+        VALUES
+        <foreach collection="keys" item="key" index="index" open="(" separator="," close=")">#{params[${key}]}</foreach>
+    </insert>
+</mapper>
+
+

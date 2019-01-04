@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.com.ultrapower.role.mapper.BaseRoleMapper">
+
+    <insert id="saveRoleInfo" parameterType="java.util.Map">
+        INSERT INTO bs_t_sm_role
+        <foreach collection="param.keys" item="key" open="(" close=")" separator="," >
+            ${key}
+        </foreach>
+        VALUES
+        <foreach collection="param.keys" item="key" open="(" close=")" separator=",">
+            #{param[${key}]}
+        </foreach>
+    </insert>
+
+    <update id="updateRoleInfo" parameterType="java.util.Map">
+        UPDATE bs_t_sm_role
+        <set>
+            <foreach collection="param.keys" item="key" separator=",">
+                <if test="key!='pid'">
+                    ${key} = #{param[${key}]}
+                </if>
+            </foreach>
+        </set>
+        WHERE
+        pid = #{param.pid}
+    </update>
+
+    <select id="queryRoleData" parameterType="java.util.Map" resultType="cn.com.ultrapower.role.entity.BaseRoleEntity">
+        SELECT pid,roleName,parentId,defineType,creater,createTime,lastModifier,lastModifyTime,remark FROM bs_t_sm_role WHERE 1=1
+        <if test="pid!=null and pid!=''">
+            AND pid = #{pid}
+        </if>
+        <if test="roleName != null and roleName != ''">
+            AND roleName =#{roleName}
+        </if>
+        <if test="searchVal!=null and searchVal!=''">
+            AND roleName LIKE  CONCAT('%',#{searchVal},'%')
+        </if>
+        ORDER BY createtime DESC
+    </select>
+
+
+    <delete id="deleteRoleInfo" parameterType="java.util.Map">
+        DELETE FROM bs_t_sm_role
+        WHERE pid = #{pid}
+    </delete>
+
+    <select id="queryRoleRelationMenutree" parameterType="java.util.Map" resultType="cn.com.ultrapower.role.entity.BaseRoleRelationMenu">
+        select t1.pid menuPid,t1.nodename nodeName,t1.nodeurl nodeurl,t1.parentid menuParentId,t1.nodetype nodeType,IF(IFNULL(t2.menuid,'')='',0,1) isSelected,t2.pid roleMenuPid
+        from bs_t_sm_menutree t1
+        left outer join bs_t_sm_rolemenutree t2
+        on t1.pid = t2.menuid and t2.roleid=#{rolePid}
+        order by t1.ORDERNUM
+    </select>
+
+    <insert id="saveRoleRelationMenuList" parameterType="java.util.List">
+        insert into bs_t_sm_rolemenutree
+           (pid,roleid,menuid,creater,createtime,lastmodifier,lastmodifytime)
+        values
+        <foreach collection="roleMenus" item="item" separator =",">
+           (#{item.roleMenuPid},#{item.rolePid},#{item.menuPid},#{item.creater},#{item.createTime},#{item.lastModifier},#{item.lastModifyTime})
+        </foreach >
+    </insert>
+
+    <!--批量删除-->
+    <update id="delRoleRelationMenuS" parameterType="java.util.Map">
+        DELETE FROM bs_t_sm_rolemenutree
+        WHERE
+        roleid = #{map.rolePid} and menuid IN
+        <foreach collection="map.menuPid" item="item" open="(" close=")" separator=",">
+            #{item}
+        </foreach>
+    </update>
+
+    <!-- 每个角色的人员 -->
+    <select id="queryRoleToPeo" resultType="cn.com.ultrapower.user.entity.BaseUserEntity" parameterType="java.util.Map">
+        SELECT us.pid pid,us.jobnum jobnum,us.loginname loginname,us.fullname fullname,us.pwd pwd,us.sex sex,us.position position,
+        us.type type,us.mobile mobile,us.phone phone,us.fax fax,us.email email,us.status status,us.ordernum ordernum,
+        us.image image,us.locationzone locationzone,us.depid depid,us.depname depname,us.groupid groupid,us.groupname groupname,
+        us.ptdepid ptdepid,us.ptdepname ptdepname,us.profession profession,us.creater creater,us.createtime createtime,
+        us.lastmodifier lastmodifier,us.lastmodifytime lastmodifytime,us.lastlogintime lastlogintime,us.systemskin systemskin,
+        us.ipaddress ipaddress,us.msn msn,us.qq qq,us.remark remark,us.pyname pyname,us.systemark systemark,us.rongtoken rongtoken,
+        us.imagestr imagestr,us.rolename rolename,us.roleid roleid
+        FROM bs_t_sm_user us LEFT JOIN bs_t_sm_role role ON us.roleid= role.pid
+        WHERE 1=1
+        <if test=" pid!=null and pid !='' ">
+            AND us.roleid = #{pid}
+        </if>
+        <if test="searchVal != null and searchVal != '' ">
+            AND us.fullname LIKE CONCAT('%',#{searchVal},'%')
+        </if>
+        ORDER BY createtime DESC
+        <if test="pagesize != null and pagesize != 0">
+            limit #{page},#{pagesize}
+        </if>
+    </select>
+
+    <select id="queryUserPeoCount" parameterType="java.util.Map" resultType="int">
+        SELECT COUNT(1) FROM bs_t_sm_user us
+        LEFT JOIN bs_t_sm_role role ON us.roleid= role.pid
+        WHERE 1=1
+        <if test=" pid!=null and pid !='' ">
+            AND us.roleid = #{pid}
+        </if>
+        <if test="searchVal != null and searchVal != '' ">
+            AND us.fullname LIKE CONCAT('%',#{searchVal},'%')
+        </if>
+    </select>
+
+    <!-- 统计角色下是否有人员 -->
+    <select id="queryRoleRelationUserCount" parameterType="java.util.Map" resultType="int">
+        SELECT COUNT(1) FROM bs_t_sm_user WHERE 1=1
+        <if test="pid != null and pid != '' ">
+            AND roleid = #{pid}
+        </if>
+    </select>
+
+</mapper>

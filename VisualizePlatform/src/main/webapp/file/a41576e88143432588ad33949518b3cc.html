@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新建页面</title>
+<link href="../view/css/vpPageView.css" rel="stylesheet" type="text/css"><link href="http://at.alicdn.com/t/font_822251_brz05ubrazb.css" rel="stylesheet" type="text/css"><link href="http://at.alicdn.com/t/font_631457_b2jv049wnjk.css" rel="stylesheet" type="text/css"><script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=ICy36B65ubGVH61IIwmQp7eIxmqGAtxx"></script><script type="text/javascript" src="../view/js/jquery-1.11.1.js"></script><script type="text/javascript" src="../view/js/vpTree.js"></script><script type="text/javascript" src="../view/js/Ischart.js"></script><script type="text/javascript" src="../view/js/vpDatePicker.js"></script><script type="text/javascript" src="../view/js/vpJsMap.js"></script><script type="text/javascript" src="../view/js/viewComFunc.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.1.0.rc2/echarts.min.js"></script></head>
+<style>
+</style>
+<body><div class="vp-container" style="height: 800px;width:1280px">
+<div id="vp8629ad5d-0678-4d55-bf7f-b7782d26816d" instyle='{"thbg":"rgba(247, 126, 126, 1)","tdevenbg":"rgba(204, 0, 255, 1)","thcolor":"rgba(248, 243, 243, 1)"}' class="vp-componnent vp-table" style="z-index: 10; top: 90px; left: 300px; width: 600px; height: 300px; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); border-color: rgb(128, 134, 149); font-size: 12px; border-width: 1px; border-radius: 0px; font-weight: 400; font-style: normal; text-decoration: none solid rgb(51, 51, 51);"></div>
+<script></script><script type="text/javascript">$(function(){var vpQueryStr="name like '%%'";pvHttpPost("http://192.168.0.102:8080/VisualizePlatform/common/queryMethod",{queryStr:JSON.stringify({limit:JSON.stringify({"page":1,"pagesize":10}),orderBy:"",mapType:"",resultType:"table",whereType:"0",where:encodeURI(vpQueryStr),tableName:"test_table",columnName:"test_table.pid,test_table.name,test_table.sex,test_table.createtime"})},function(data){pvCreatTable("vp8629ad5d-0678-4d55-bf7f-b7782d26816d",{th:["姓名","性别","日期"],param:["name","sex","createtime"],td:data.RESULT.list},null,null,undefined);});});</script></div>
+</body>
+</html>

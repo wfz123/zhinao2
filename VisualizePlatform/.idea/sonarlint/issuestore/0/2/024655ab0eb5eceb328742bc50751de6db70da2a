@@ -1,0 +1,21 @@
+
+osquid:S1192"NDefine a constant instead of duplicating this literal "query is null" 5 times.(ïÈ®øıÿÿÿÿ8ƒ´¹áú,
+8squid:S1148"#Use a logger to log this exception.(Ç’Çê
+8squid:S1148"#Use a logger to log this exception.(Ç’Çê
+8squid:S1148"#Use a logger to log this exception.(Ç’Çê
+[squid:S1192"FDefine a constant instead of duplicating this literal "error" 9 times.(…èÅ
+8squid:S1148"#Use a logger to log this exception.(Ç’Çê
+8squid:S1148"#Use a logger to log this exception.(Ç’Çê
+?squid:S1148"#Use a logger to log this exception.(Ç’Çê8›Ò‘…ü,
+?squid:S1148"#Use a logger to log this exception.(Ç’Çê8›Ò‘…ü,
+asquid:S1192"GDefine a constant instead of duplicating this literal "failed" 9 times.(ïÈ®øıÿÿÿÿ
+Msquid:UselessImportCheck"+Remove this unused import 'java.util.Date'.(¸…¼ü
+Zsquid:S1155">Use isEmpty() to check whether the collection is empty or not.(•ñ¥À8›Ò‘…ü,
+Ysquid:UselessImportCheck"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛ
+?squid:S1148"#Use a logger to log this exception.(Ç’Çê8ÀÇéÙü,
+msquid:S1192"XDefine a constant instead of duplicating this literal "query parameter is null" 4 times.(ş¬–
+8squid:S1148"#Use a logger to log this exception.(Ç’Çê
+Ssquid:S1155">Use isEmpty() to check whether the collection is empty or not.(•ñ¥À
+\squid:S1192"HDefine a constant instead of duplicating this literal "success" 9 times.(óâ™v
+xsquid:S1192"WDefine a constant instead of duplicating this literal "query happen exception" 4 times.(éšæÿÿÿÿÿ8›Ò‘…ü,
+csquid:S1192"GDefine a constant instead of duplicating this literal "update" 3 times.(Çõ8ùÛÅ¢ş,

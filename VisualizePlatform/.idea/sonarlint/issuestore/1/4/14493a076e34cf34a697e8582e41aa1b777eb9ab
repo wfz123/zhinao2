@@ -1,0 +1,40 @@
+
+}squid:S11493"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(‡€õ8Ñ–ı¬ú,
+Qsquid:UselessParenthesesCheckg"!Remove these useless parentheses.(½Õü8™÷–³ú,
+Usquid:S2696»"6Make the enclosing method "static" or remove this set.(ôÜ¿Ñ8Áÿ•³ø,
+Lsquid:S1481`".Remove this unused "updateNum" local variable.(ÿ›‰­8Ñ–ı¬ú,
+Nsquid:S00108‹")Either remove or fill this block of code.(¬Àáªøÿÿÿÿ8Ñ–ı¬ú,
+}squid:S1149z"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ÒÛ©´8Ñ–ı¬ú,
+fsquid:S2259]"CA "NullPointerException" could be thrown; "param" is nullable here.(­İıÑıÿÿÿÿ8Ñ–ı¬ú,
+Gsquid:S1148†"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ñ–ı¬ú,
+asquid:S2259€"BA "NullPointerException" could be thrown; "conn" is nullable here.(£í’á8Ñ–ı¬ú,
+‚squid:S1149W"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(–†ı´ıÿÿÿÿ8Ñ–ı¬ú,
+\
+squid:S106…"9Replace this use of System.out or System.err by a logger.(â”«•şÿÿÿÿ8Ñ–ı¬ú,
+psquid:S3008"TRename this field "DB_DRIVER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ë£ÿÿÿÿÿ
+|squid:S1149_"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(µÎØ8Ñ–ı¬ú,
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÿ¸õûüÿÿÿÿ8Ñ–ı¬ú,
+}squid:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Î®êÃ8Ñ–ı¬ú,
+}squid:S1149+"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(£…Êœ8Ñ–ı¬ú,
+Gsquid:S1905h")Remove this unnecessary cast to "String".(¸ïû’8áë¢³ú,
+osquid:S3008"SRename this field "DB_UNAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ş–ˆşıÿÿÿÿ
+@squid:S1148½"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+isquid:S1764*"KCorrect one of the identical sub-expressions on both sides of operator "||"(°Ãêò8üëÆ±ú,
+ksquid:S1192"HDefine a constant instead of duplicating this literal "content" 6 times.(Ã­›¿ÿÿÿÿÿ8Ñ–ı¬ú,
+P
+squid:S106Å"9Replace this use of System.out or System.err by a logger.(—ÌÄù
+fsquid:S2259‰"GA "NullPointerException" could be thrown; "statement" is nullable here.(³úÀ‹8Ñ–ı¬ú,
+msquid:UselessImportCheck"BRemove this unused import 'cn.com.ultrapower.utils.UUIDGenerator'.(¸šàË8Œ‚Ï±ú,
+msquid:S3008"QRename this field "DB_PWD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯¯Æ‹şÿÿÿÿ
+U
+squid:S106˜"9Replace this use of System.out or System.err by a logger.(Óù£Éøÿÿÿÿ
+|squid:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(˜İâœÿÿÿÿÿ
+Usquid:S2696º"6Make the enclosing method "static" or remove this set.(ÍÙİü8Áÿ•³ø,
+msquid:S3008"QRename this field "DB_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ËƒÔ…ıÿÿÿÿ
+Ssquid:S2696¹"6Make the enclosing method "static" or remove this set.(‰İó©şÿÿÿÿ
+asquid:S1155a">Use isEmpty() to check whether the collection is empty or not.(ï—È‡ùÿÿÿÿ8·©ÿ²ú,
+usquid:S3776W"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(–†ı´ıÿÿÿÿ8ô‰³²ú,
+ƒsquid:S1488A"`Immediately return this expression instead of assigning it to the temporary variable "sqlWhere".(Òƒœôıÿÿÿÿ8¸É­ú,
+lsquid:S2068"P'PWD' detected in this expression, review this potentially hardcoded credential.(¯¯Æ‹şÿÿÿÿ
+Nsquid:S2696¸"6Make the enclosing method "static" or remove this set.(ßøšµ

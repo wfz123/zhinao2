@@ -1,0 +1,29 @@
+
+{squid:S4144T"_Update this method so that its implementation is not identical to "readServiceFile" on line 19.(øÝ¨’ÿÿÿÿÿ
+Fsquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+Fsquid:S20938"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+Fsquid:S2093X"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+gsquid:CommentedOutCodeLine2"<This block of commented-out lines of code should be removed.(Â¿èåþÿÿÿÿ
+gsquid:CommentedOutCodeLine="<This block of commented-out lines of code should be removed.(Ãÿöøÿÿÿÿ
+asquid:CommentedOutCodeLiner"<This block of commented-out lines of code should be removed.(ûŒæ 
+gsquid:CommentedOutCodeLinex"<This block of commented-out lines of code should be removed.(šù€¨øÿÿÿÿ
+asquid:CommentedOutCodeLine~"<This block of commented-out lines of code should be removed.(ñ­º
+T
+squid:S106u"9Replace this use of System.out or System.err by a logger.(Š¶Íêûÿÿÿÿ
+O
+squid:S106v"9Replace this use of System.out or System.err by a logger.(–Äž÷
+O
+squid:S106|"9Replace this use of System.out or System.err by a logger.(¡šÛÝ
+O
+squid:S106}"9Replace this use of System.out or System.err by a logger.(ùõÅ‰
+Msquid:S14817"1Remove this unused "stringBuffer" local variable.(ì­ŠÜúÿÿÿÿ
+Asquid:S00108&")Either remove or fill this block of code.(ŸäÁ‚
+Asquid:S00108H")Either remove or fill this block of code.(ŸäÁ‚
+Asquid:S00108g")Either remove or fill this block of code.(ŸäÁ‚
+?squid:S1148!"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+?squid:S1148C"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+?squid:S1148b"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+@squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+{squid:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ì­ŠÜúÿÿÿÿ
+{squid:S11497"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ì­ŠÜúÿÿÿÿ
+{squid:S1149W"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ì­ŠÜúÿÿÿÿ

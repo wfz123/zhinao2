@@ -1,0 +1,26 @@
+
+Bsquid:S1148ô"#Use a logger to log this exception.(Ç’Çê8ô¡¿Òá,
+gsquid:S1192>"IDefine a constant instead of duplicating this literal "taskSign" 3 times.(’á¿£8ô¡¿Òá,
+Bsquid:S1148¾"#Use a logger to log this exception.(Ç’Çê8ô¡¿Òá,
+…squid:S1488_"bImmediately return this expression instead of assigning it to the temporary variable "returnData".(È«Ò‚þÿÿÿÿ8ô¡¿Òá,
+osquid:CommentedOutCodeLineˆ"<This block of commented-out lines of code should be removed.(™ÿñ÷ùÿÿÿÿ8ÛÉùØé,
+isquid:S1192."FDefine a constant instead of duplicating this literal "error" 7 times.(éšæÿÿÿÿÿ8ô¡¿Òá,
+esquid:S11920"HDefine a constant instead of duplicating this literal "success" 7 times.(óâ™v8ô¡¿Òá,
+Bsquid:S1148Ó"#Use a logger to log this exception.(Ç’Çê8ô¡¿Òá,
+dsquid:UselessImportCheck":Remove this unused import 'org.apache.http.NameValuePair'.(ß²óH8ô¡¿Òá,
+Bsquid:S1148«"#Use a logger to log this exception.(Ç’Çê8ô¡¿Òá,
+‚squid:S1149D"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ì­ŠÜúÿÿÿÿ8ô¡¿Òá,
+\squid:S1155r">Use isEmpty() to check whether the collection is empty or not.(•ñ¥À8ô¡¿Òá,
+\
+squid:S106è"9Replace this use of System.out or System.err by a logger.(°½Üãýÿÿÿÿ8ô¡¿Òá,
+wsquid:S1192„"XDefine a constant instead of duplicating this literal "query parameter is null" 4 times.(þž¬–8ô¡¿Òá,
+nsquid:CommentedOutCodeLine#"<This block of commented-out lines of code should be removed.(ô±çêüÿÿÿÿ8‘·öØé,
+zsquid:S1192."WDefine a constant instead of duplicating this literal "query happen exception" 4 times.(éšæÿÿÿÿÿ8ô¡¿Òá,
+Asquid:S1148-"#Use a logger to log this exception.(Ç’Çê8ô¡¿Òá,
+}squid:S1192”"YDefine a constant instead of duplicating this literal "request happen exception" 3 times.(ŽÀƒùùÿÿÿÿ8ô¡¿Òá,
+Asquid:S1148w"#Use a logger to log this exception.(Ç’Çê8ô¡¿Òá,
+jsquid:S1192"GDefine a constant instead of duplicating this literal "failed" 6 times.(ïÈ®øýÿÿÿÿ8ô¡¿Òá,
+wsquid:UselessImportCheck	"GRemove this unused import 'org.apache.http.message.BasicNameValuePair'.(³öÖøþÿÿÿÿ8ô¡¿Òá,
+Bsquid:S1148“"#Use a logger to log this exception.(Ç’Çê8ô¡¿Òá,
+…squid:S1488N"bImmediately return this expression instead of assigning it to the temporary variable "returnData".(È«Ò‚þÿÿÿÿ8ô¡¿Òá,
+Lsquid:S1481ã"(Remove this unused "num" local variable.(†¬›Äûÿÿÿÿ8ô¡¿Òá,

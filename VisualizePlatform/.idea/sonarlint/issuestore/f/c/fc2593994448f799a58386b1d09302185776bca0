@@ -1,0 +1,15 @@
+
+¢%squid:RedundantThrowsDeclarationCheck%"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ı¢€ºúÿÿÿÿ
+Qsquid:S1191"5Use classes from the Java API instead of Sun classes.(Ó¨Ôÿÿÿÿÿ
+isquid:S2095V"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(«ÄÒûÿÿÿÿ
+jsquid:S2095t"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(óÍÜ¨ùÿÿÿÿ
+bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(‘¥²æ
+asquid:CommentedOutCodeLine&"<This block of commented-out lines of code should be removed.(ü­ĞK
+gsquid:CommentedOutCodeLinep"<This block of commented-out lines of code should be removed.(å­‹ßøÿÿÿÿ
+Vsquid:S1118":Add a private constructor to hide the implicit public one.(ö¯çøÿÿÿÿ
+csquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(Ó–”»øÿÿÿÿ
+csquid:S00112%"FDefine and throw a dedicated exception instead of using a generic one.(ı¢€ºúÿÿÿÿ
+^squid:S00112R"FDefine and throw a dedicated exception instead of using a generic one.(Ç‚Õ
+csquid:S00112m"FDefine and throw a dedicated exception instead of using a generic one.(€ì­ëüÿÿÿÿ
+X
+squid:S899s"BDo something with the "boolean" value returned by "createNewFile".(®„âÖ

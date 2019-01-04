@@ -1,0 +1,25 @@
+
+O
+squid:S106o"9Replace this use of System.out or System.err by a logger.(ã…Öµ
+msquid:S3008"QRename this field "DB_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ËƒÔ…ıÿÿÿÿ
+Msquid:S2696c"6Make the enclosing method "static" or remove this set.(ÍÙİü
+Msquid:S2696d"6Make the enclosing method "static" or remove this set.(ôÜ¿Ñ
+?squid:S1148f"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+osquid:S3008"SRename this field "DB_UNAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ş–ˆşıÿÿÿÿ
+T
+squid:S106,"9Replace this use of System.out or System.err by a logger.(ÿ¸õûüÿÿÿÿ
+?squid:S11485"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+psquid:S3008"TRename this field "DB_DRIVER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ë£ÿÿÿÿÿ
+lsquid:S2068"P'PWD' detected in this expression, review this potentially hardcoded credential.(¯¯Æ‹şÿÿÿÿ
+^squid:S1192"HDefine a constant instead of duplicating this literal "content" 3 times.(¹˜
+Fsquid:S00108:")Either remove or fill this block of code.(¬Àáªøÿÿÿÿ
+]squid:S1858."F"sql" is already a string, there's no need to call "toString()" on it.(¡¬‹¨
+Rsquid:S2696b"6Make the enclosing method "static" or remove this set.(‰İó©şÿÿÿÿ
+Msquid:S2696a"6Make the enclosing method "static" or remove this set.(ßøšµ
+msquid:S3008"QRename this field "DB_PWD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯¯Æ‹şÿÿÿÿ
+Ysquid:S2259-"BA "NullPointerException" could be thrown; "conn" is nullable here.(£í’á
+T
+squid:S106V"9Replace this use of System.out or System.err by a logger.(Óù£Éøÿÿÿÿ
+^squid:S22598"GA "NullPointerException" could be thrown; "statement" is nullable here.(³úÀ‹
+N
+squid:S1064"9Replace this use of System.out or System.err by a logger.(Üë¨2

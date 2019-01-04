@@ -1,0 +1,53 @@
+
+fsquid:S1192‡"HDefine a constant instead of duplicating this literal "success" 5 times.(óâ™v8”«Íü,
+isquid:CommentedOutCodeLineú"<This block of commented-out lines of code should be removed.(ˆëüK8”«Íü,
+wsquid:S1192˜"XDefine a constant instead of duplicating this literal "\t\t\"top\": \"0px\",\n" 3 times.(ÿ ¶8”«Íü,
+esquid:S1126¿"AReplace this if-then-else statement by a single return statement.(ë“«øÿÿÿÿ8”«Íü,
+hsquid:S1192˜"IDefine a constant instead of duplicating this literal "storeUrl" 3 times.(ü´Î½8”«Íü,
+jsquid:S1192è"FDefine a constant instead of duplicating this literal ".html" 3 times.(©¹’öşÿÿÿÿ8ã€Æÿü,
+zsquid:S1488"[Immediately return this expression instead of assigning it to the temporary variable "num".(éÆë8”«Íü,
+Bsquid:S1148ƒ"#Use a logger to log this exception.(Ç’Çê8”«Íü,
+Rsquid:S1481Ì".Remove this unused "jsonArray" local variable.(‘â‹´ùÿÿÿÿ8”«Íü,
+Ksquid:S1481j"(Remove this unused "num" local variable.(İ¬ˆ»üÿÿÿÿ8ñ—ú‘í,
+Bsquid:S1148â"#Use a logger to log this exception.(Ç’Çê8”«Íü,
+Nsquid:S1481¶"/Remove this unused "webappPath" local variable.(ØíıŒ8Ú‚ı,
+gsquid:S1192¶"HDefine a constant instead of duplicating this literal "instyle" 3 times.(ëŒºó8”«Íü,
+|squid:S1192p"YDefine a constant instead of duplicating this literal "request happen exception" 5 times.(Àƒùùÿÿÿÿ8”«Íü,
+Gsquid:S1148É"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8”«Íü,
+osquid:CommentedOutCodeLineı"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8”«Íü,
+Nsquid:S1481å"/Remove this unused "webappPath" local variable.(ØíıŒ8ƒú‚ı,
+qsquid:S3776¢"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(È¤ì³8”«Íü,
+|squid:S1192%"YDefine a constant instead of duplicating this literal "config/config.properties" 4 times.(©¿¤¢ùÿÿÿÿ8ç¯‚ı,
+†squid:S1192G"hDefine a constant instead of duplicating this literal "<script type=\"text/javascript\" src=\"" 7 times.(ğÚøö8”«Íü,
+…squid:UselessImportCheck"URemove this unused import 'cn.com.ultrapower.groupmanage.service.GroupmanageService'.(æàºÉûÿÿÿÿ8Ë¯Òü,
+nsquid:S1192%"KDefine a constant instead of duplicating this literal "requestUrl" 5 times.(©¿¤¢ùÿÿÿÿ8”«Íü,
+}squid:S1192–"YDefine a constant instead of duplicating this literal "\t\t\"left\": \"0px\",\n" 3 times.(ŒÌü²øÿÿÿÿ8”«Íü,
+\
+squid:S106"9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ8”«Íü,
+psquid:S3776$"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ˆı¬†8”«Íü,
+Usquid:S1481Í"1Remove this unused "stringBuffer" local variable.(ì­ŠÜúÿÿÿÿ8”«Íü,
+Bsquid:S1148"#Use a logger to log this exception.(Ç’Çê8”«Íü,
+osquid:CommentedOutCodeLineÎ"<This block of commented-out lines of code should be removed.(¢³÷™şÿÿÿÿ8”«Íü,
+jsquid:S1192)"GDefine a constant instead of duplicating this literal "failed" 5 times.(ïÈ®øıÿÿÿÿ8”«Íü,
+Nsquid:S2093ï"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8”«Íü,
+Gsquid:S1148ú"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8”«Íü,
+‚squid:S1149>"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Äßß©ıÿÿÿÿ8ñ—ú‘í,
+ƒsquid:S1149£"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(á‹Ÿ«úÿÿÿÿ8”«Íü,
+ƒsquid:S1149Í"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ì­ŠÜúÿÿÿÿ8”«Íü,
+msquid:S4042¿"IUse "java.nio.Files#delete" here for better messages on error conditions.(ë“«øÿÿÿÿ8”«Íü,
+isquid:CommentedOutCodeLine»"<This block of commented-out lines of code should be removed.(”¾ì[8Ú‚ı,
+~squid:S1149¢"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(È¤ì³8”«Íü,
+isquid:S1192p"FDefine a constant instead of duplicating this literal "error" 5 times.(Àƒùùÿÿÿÿ8”«Íü,
+lsquid:S1192@"NDefine a constant instead of duplicating this literal "<link href=\"" 3 times.(Ã¼æà8ğ·„ÿü,
+Asquid:S1148o"#Use a logger to log this exception.(Ç’Çê8”«Íü,
+osquid:CommentedOutCodeLineì"<This block of commented-out lines of code should be removed.(ÈšŠşûÿÿÿÿ8ƒú‚ı,
+Gsquid:S1148ô"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8”«Íü,
+W
+squid:S106¸"9Replace this use of System.out or System.err by a logger.(£±”Ç8”«Íü,
+wsquid:S1192‰"XDefine a constant instead of duplicating this literal "query parameter is null" 3 times.(ş¬–8”«Íü,
+Hsquid:S14810"+Remove this unused "number" local variable.(Ú”ñJ8ÁìÓü,
+jsquid:CommentedOutCodeLineŠ"<This block of commented-out lines of code should be removed.(ŸâŸú8”«Íü,
+Qsquid:S1135›"2Complete the task associated to this TODO comment.(á…¿Ï8”«Íü,
+isquid:CommentedOutCodeLine&"<This block of commented-out lines of code should be removed.(äÇßâ8ç¯‚ı,
+Bsquid:S1148¨"#Use a logger to log this exception.(Ç’Çê8”«Íü,
+zsquid:S1192´"[Define a constant instead of duplicating this literal " class=\"vp-componnent vp-" 4 times.(Ö²ö±8”«Íü,

@@ -1,0 +1,35 @@
+
+Fsquid:S1148o"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ò¹Œ°æ,
+Msquid:S00108t")Either remove or fill this block of code.(¬Àáªøÿÿÿÿ8ò¹Œ°æ,
+Xsquid:S1191"5Use classes from the Java API instead of Sun classes.(ËçÔ•ÿÿÿÿÿ8ìîô±æ,
+vsquid:S3008"SRename this field "DB_UNAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ş–ˆşıÿÿÿÿ8ò¹Œ°æ,
+csquid:UselessImportCheck"3Remove this unused import 'net.sf.json.JSONObject'.(©ã¨şÿÿÿÿ8Ü›æ»æ,
+gsquid:S11923"IDefine a constant instead of duplicating this literal "parentId" 4 times.(¾šÖé8œÒå»æ,
+tsquid:S3008"QRename this field "DB_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ËƒÔ…ıÿÿÿÿ8ò¹Œ°æ,
+tsquid:S2159G"VRemove this call to "equals"; comparisons between unrelated types always return false.(©˜ 8»Ñ®¹æ,
+wsquid:S3008"TRename this field "DB_DRIVER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ë£ÿÿÿÿÿ8ò¹Œ°æ,
+fsquid:UselessImportCheck	";Remove this unused import 'sun.reflect.generics.tree.Tree'.(ºğ“´8 ‹ºæ,
+ssquid:S2068"P'PWD' detected in this expression, review this potentially hardcoded credential.(¯¯Æ‹şÿÿÿÿ8ò¹Œ°æ,
+U
+squid:S106n"9Replace this use of System.out or System.err by a logger.(á8ò¹Œ°æ,
+|squid:S22930"YReplace the type specification in this constructor call with the diamond operator ("<>").(ŠÏ»Ïøÿÿÿÿ8…ÄÃ¸æ,
+ysquid:S1488*"\Immediately return this expression instead of assigning it to the temporary variable "list".(Ê¹Ï8û´æ»æ,
+Usquid:S2696œ"6Make the enclosing method "static" or remove this set.(ôÜ¿Ñ8ò¹Œ°æ,
+esquid:S2259r"GA "NullPointerException" could be thrown; "statement" is nullable here.(³úÀ‹8ò¹Œ°æ,
+Usquid:S2696›"6Make the enclosing method "static" or remove this set.(ÍÙİü8ò¹Œ°æ,
+ksquid:UselessImportCheck"@Remove this unused import 'cn.com.ultrapower.utils.StringUtils'.(¥Ù«õ8ò¹Œ°æ,
+zsquid:UselessImportCheck"JRemove this unused import 'com.sun.org.apache.bcel.internal.generic.DADD'.(ËçÔ•ÿÿÿÿÿ8ìîô±æ,
+wsquid:S2293L"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÆßÔ8…ÄÃ¸æ,
+Gsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ò¹Œ°æ,
+[
+squid:S106e"9Replace this use of System.out or System.err by a logger.(ÿ¸õûüÿÿÿÿ8ò¹Œ°æ,
+`squid:S2259f"BA "NullPointerException" could be thrown; "conn" is nullable here.(£í’á8ò¹Œ°æ,
+dsquid:S1858g"F"sql" is already a string, there's no need to call "toString()" on it.(¡¬‹¨8ò¹Œ°æ,
+Zsquid:S2696š"6Make the enclosing method "static" or remove this set.(‰İó©şÿÿÿÿ8ò¹Œ°æ,
+Usquid:S2589S"7Remove this expression which always evaluates to "true"(™©ß“8‰úš»æ,
+Hsquid:S1172'"*Remove this unused method parameter "map".(ğã¹ğ8”ò÷±æ,
+\
+squid:S106"9Replace this use of System.out or System.err by a logger.(Óù£Éøÿÿÿÿ8ò¹Œ°æ,
+Usquid:S2696™"6Make the enclosing method "static" or remove this set.(ßøšµ8ò¹Œ°æ,
+bsquid:UselessImportCheck"2Remove this unused import 'net.sf.json.JSONArray'.(å¶ÿÿÿÿÿ8Ü›æ»æ,
+tsquid:S3008"QRename this field "DB_PWD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯¯Æ‹şÿÿÿÿ8ò¹Œ°æ,
